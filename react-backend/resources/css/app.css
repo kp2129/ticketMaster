@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    /* color: white; */
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+}
+
+
+
+
+body, #app{
+    height: 100vh;
+    /* background-image: url("../images/backgorund.png"); */
+}
+
+main {
+    height: -webkit-fill-available;
+}
+
+.navbar_buttons{
+    display: flex;
+    gap: 1rem;
+}
+
+.guest_navigation{
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth_navigation{
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.event-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.event-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-card > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1REM;
+}
+
+img{
+    max-width: 20pc;
+}
+
+.seats-flex{
+    display: flex;
+    GAP: 2rem;
+    JUSTIFY-CONTENT: center;
+    padding: 1REM;
+}
+
+.seat-row{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.seat.occupied{
+    color: RED;
+}
+.seat.available.selected{
+    color: green;
+}
